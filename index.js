@@ -1,8 +1,8 @@
-const bill = document.getElementById("bill").value;
+const bill = parseInt(document.getElementById("bill").value);
 console.log(typeof ( bill));
 
-const noOfPeople = document.getElementById("noofpeople").value;
-console.log(noOfPeople);
+const noOfPeople = parseInt(document.getElementById("noofpeople").value);
+console.log(typeof noOfPeople);
 const tipPerPersonPara = document.getElementById("tipperperson");
 const totalPerPersonPara = document.getElementById("totalperperson");
 
@@ -11,20 +11,14 @@ const tipButtons = tipDiv.querySelectorAll(".btn");
 
 tipButtons.forEach((btn) => {
     btn.addEventListener("click", function(){
-        let tip = btn.textContent;
-        console.log(tip);
-        tipCalculator();
+        let tip = parseInt(btn.textContent);
+        let tipPerPerson = (tip/100*bill)/noOfPeople;
+        let totalPerPerson= tipPerPerson + (bill/noOfPeople);
+        tipPerPersonPara.innerHTML = tipPerPerson;
+        totalPerPersonPara.innerHTML = totalPerPerson;
     })
 })
  
 
-function tipCalculator(){
-    let tipPerPerson = (tip*bill)/noOfPeople;
-    let totalPerPerson= tipPerPerson + (bill/noOfPeople);
-
-console.log(tipPerPerson);
-
-    tipPerPersonPara.innerHTML = tipPerPerson;
-    totalPerPersonPara.innerHTML = totalPerPerson;
-}
+console.log("I am testing");
 
