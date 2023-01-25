@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
 *,
 *::after,
 *::before{
@@ -18,6 +20,7 @@
 
 body{
     background-color: var(--Lightgrayishcyan);
+    font-family: 'Rubik', sans-serif;
 }
 .header{
     display: flex;
@@ -25,7 +28,88 @@ body{
     margin-top: 60px;
     margin-bottom: 40px;
     letter-spacing: 4px;
+    font-family: 'Rubik', sans-serif;
+    color: var(--Verydarkcyan);
+    
 }
+.majorbox{
+    background-color: var(--White);
+    border-radius: 20px 20px;
+    padding: 30px;
+    
+}
+.btn{
+    background-color: var(--Verydarkcyan);
+    color: var(--White);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    font:inherit;
 
+}
+.tip{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding: 20px 0;
+    
+
+
+}
+.minorbox{
+    background-color: var(--Verydarkcyan);
+    border-radius: inherit;
+    color: var(--White);
+    padding: inherit;
+    margin: 20px 0;
+    
+
+}
+input[type="number"]{
+    width: 100%;
+    font-size: 24px;
+    background-color: var(--Verylightgrayishcyan);
+    border: 8px solid var(--Verylightgrayishcyan);
+    appearance :textfield ;
+    text-align: end;
+    outline: none;
+    
+}
+.input-bill{
+    background-image:url( Images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 40px;
+    margin: 12px 0;
+}
+.input-noofpeople{
+    background-image:url( Images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 40px;
+    margin: 12px 0;
+
+}
+input[type="number"]:focus{
+    border: 2px solid var(--Strongcyan);
+
+}
+label{
+    color:var(--Grayishcyan) ;
+    font-weight: 500;
+
+}
+.reset{
+    width: 100%;
+    text-transform: uppercase;
+    padding:12px 0;
+    margin-top: 5px;
+    font-size: 24px;
+}
+.total,.tipdisplay{
+display: flex;
+justify-content: space-between;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
