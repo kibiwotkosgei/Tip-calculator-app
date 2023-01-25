@@ -1,8 +1,5 @@
 const bill = parseInt(document.getElementById("bill").value);
-console.log(typeof ( bill));
-
 const noOfPeople = parseInt(document.getElementById("noofpeople").value);
-console.log(typeof noOfPeople);
 const tipPerPersonPara = document.getElementById("tipperperson");
 const totalPerPersonPara = document.getElementById("totalperperson");
 
@@ -16,9 +13,12 @@ tipButtons.forEach((btn) => {
         let totalPerPerson= tipPerPerson + (bill/noOfPeople);
         tipPerPersonPara.innerHTML = tipPerPerson;
         totalPerPersonPara.innerHTML = totalPerPerson;
+        if(noOfPeople <= 0){
+            tipPerPersonPara.innerHTML = "$0.00";
+        totalPerPersonPara.innerHTML = "$0.00";
+        console.log(document.getElementById("noofpeople"));
+            document.getElementById("tip").classList.add("validation");
+        }
     })
 })
  
-
-console.log("I am testing");
-

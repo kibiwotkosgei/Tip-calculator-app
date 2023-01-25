@@ -6,59 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
+<body>
 <header>
 <div class="header">
-  <p>
-   <span>SPLIT</span>
-   <span>TTER</span>
-  </p>
+  <h1>
+   SPLIT <br>
+   TTER
+  </h1>
 </div>
 
 </header>
 <main>
-<body>
- <div class="majorbox">
 
+  <div class="tipcalc">
+   <label for="bill">Bill</label>
+   <input type="number" class="input-bill" placeholder="0" id="bill"> 
 
-  Bill 
-<input type="number" class="input-bill" placeholder="0" id="bill"> 
-  Select Tip % 
+   <label for="custom">Select Tip %</label>
 
-<div id="tip">
-
+<div id="tip" class="tip">
   <button class="btn">5%</button>
   <button class="btn">10%</button>
-  <button class="btn">15%</button>
+  <button class="btn">15%</button> 
   <button class="btn">25%</button>
   <button class="btn">50%</button>
- 
+  <input type="number" placeholder="Custom" class="input-custom" id="custom">
 </div>
 
-  Number of People 
+<label for="noofpeople">Number of People </label>
   <input type="number" class="input-noofpeople" placeholder="0" id="noofpeople">
-
+</div>
 <div class="minorbox">
-  Tip Amount
-  / person
-  <p id="tipperperson"> $ 0</p>
 
-  Total
-  / person 
-  <p id="totalperperson">$ 0</p>
-  
-<input type="reset">
+  <div class="tipdisplay">
+    <div class="tipamountperperson">
+      <p>Tip Amount</p>
+      <p>/ person</p>
+    </div>
+  <div class="tipamount">
+  <p id="tipperperson"> $ 0</p>
+</div>
+</div>
+
+<div class="total">
+  <div class="totalperperson">
+  <p>Total</p>
+  <p>/ person</p>
+</div>
+<div class="totalamount">
+  <p id="totalperperson"> $ 0</p>
+</div>
+</div>
+
+<input type="reset" class="reset" >
 
 </div>
-</div>   
-    <script src="index.js"></script>
-</body>
+  
 </main>
 <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Collins Kibiwot</a>.
   </div>
 </footer>
+<script src="index.js"></script>
+</body>
 </html>
