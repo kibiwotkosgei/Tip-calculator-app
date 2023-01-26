@@ -13,11 +13,11 @@ tipButtons.forEach((btn) => {
         let totalPerPerson= tipPerPerson + (bill/noOfPeople);
         tipPerPersonPara.innerHTML = tipPerPerson;
         totalPerPersonPara.innerHTML = totalPerPerson;
+
         if(noOfPeople <= 0){
             tipPerPersonPara.innerHTML = "$0.00";
-        totalPerPersonPara.innerHTML = "$0.00";
-        console.log(document.getElementById("noofpeople"));
-            document.getElementById("tip").classList.add("validation");
+            totalPerPersonPara.innerHTML = "$0.00";
+            document.getElementById("people").classList.add("nopeople");
         }
     })
 })

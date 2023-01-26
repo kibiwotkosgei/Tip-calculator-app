@@ -137,37 +137,40 @@ padding-bottom: 30px;
  color: var(--Strongcyan);
 }
 
-.validation .input-noofpeople::before{
-    content: "Can't be zero";
+.nopeople {
+    position: relative;
+  }
+  
+  .nopeople input {
+    border: 2px solid #d1803e;
+    /* color: var(--vdkcyan); */
+  }
+  
+  .nopeople ::after {
     position: absolute;
-    top: 0;
-    border: 2px solid red;
-    
-}
-.validation input:last-child{
-    display: none;
-    border: 2px solid red;
-    
-}
+    content: "Can't be zero";
+    color: #d1803e;
+    right: 14px;
+  }
+
 
 .attribution {
-     font-size: 11px; text-align: center; 
-     margin: 20px;
-    }
+    font-size: 11px; text-align: center; 
+    margin: 20px;
+}
 .attribution a {
-     color: hsl(228, 45%, 44%);
-     }
+    color: hsl(228, 45%, 44%);
+}
 
 @media (width > 650px) {
-  main{
-    display: flex;
-    gap: 2rem;
-}
-.tipcalc, .minorbox{
-      flex:1;
-
-  }
-  .tip{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    main{
+        display: flex;
+        gap: 2rem;
+    }
+    .tipcalc, .minorbox{
+        flex:1;  
+    }
+    .tip{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
