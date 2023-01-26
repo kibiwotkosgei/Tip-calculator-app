@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/kibiwotkosgei/Tip-calculator-app)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/kibiwotkosgei/Tip-calculator-app)
+- Live Site URL: [GitHub Pages](https://kibiwotkosgei.github.io/Tip-calculator-app/)
 
 ## My process
 I started to by analysing the project.I set up the HTML code then worked on the functionality side.Later styled with CSS.Started with the mobile view then finished with the desktop view.
@@ -125,6 +125,7 @@ I want to continue focusing on the javascript side of the app.I want to work on 
 
 
 ## Acknowledgments
-Collins Kibenon triggered me to start this cahllenge and Lesley Kimutai helped when I was stack.
+- [Kibenon Collins](https://www.frontendmentor.io/profile/collinskibenon)-Challenged me to do this cahllenge,guided me and was very insightful and inspiring.
+- [Lesley Kimutai](https://www.frontendmentor.io/profile/Leskim)  Helped debug my code.
 
-<!-- Thank you punny friends.Whips! -->
+Thank you punny friends.Whips!
