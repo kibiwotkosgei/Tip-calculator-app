@@ -136,14 +136,14 @@ padding-bottom: 30px;
 #totalperperson{
  color: var(--Strongcyan);
 }
-
+/* No people validation */
 .nopeople {
     position: relative;
   }
   
   .nopeople input {
     border: 2px solid #d1803e;
-    /* color: var(--vdkcyan); */
+  
   }
   
   .nopeople ::after {
