@@ -29,7 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](.tipdesktopviewscreenshot/.jpg)
+![](./Images/tipdesktopviewscreenshot.JPG)
+![](./Images/mobileviewscreenshot.JPG)
+
 
 ### Links
 
